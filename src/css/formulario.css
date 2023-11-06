@@ -1,0 +1,117 @@
+
+.formulario{
+  width: 100%;
+  height: 500px;
+  padding: 15px;
+  background-color: var(--blanco);
+}
+.form{
+  margin-top: 85px;
+}
+.item{
+  margin-top:20px;
+  display:flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.item label{
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.item input{
+  width: 90%;
+  height: 35px;
+  padding: 5px;
+  font-size: 20px;
+  border:var(--violetaClaro) solid thin;
+  border-radius: 5px;
+}
+input:focus, input[type]:focus{
+  outline: none;
+}
+
+.fecha-cvv{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.fecha{
+  grid-column: 1/3;
+  margin: 0 auto;
+}
+.fecha label{
+  font-size: 18px;
+}
+.input-cvv{
+  display: block;
+  width: 5px;
+}
+
+.div-select{
+  display: flex;
+  justify-content: space-around;
+}
+
+select {
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    -webkit-appearance:none;
+    -ms-appearance:none;
+    -o-appearance:none;
+    appearance:none;
+    font-size: 18px;
+    width: 60px;
+    height: 40px;
+    padding: 5px;
+    text-align: center;
+    border:var(--violetaClaro) solid thin;
+    border-radius: 5px;
+    background-color: var(--blanco);
+  }
+  .boton{
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--violetaFuerte);
+    color: var(--blanco);
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .validado{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+@media (min-width: 576px) {
+    .formulario{
+      width: 400px;
+    }
+}
+
+/*::::::::COMPUTADORA::::::::::*/
+@media (min-width: 768px) {
+    .formulario{
+      width: 600PX;
+      height: 500px;
+    }
+    .form{
+      margin-left: 150px;
+    }
+    .fecha-cvv{
+      grid-template-columns: repeat(2,1fr);
+    }
+    .fecha{
+      grid-column: auto;
+    }
+    .item input{
+      width: 60%;
+    }
+}
